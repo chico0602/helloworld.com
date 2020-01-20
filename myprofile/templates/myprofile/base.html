@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+
+    <header>Chico's Profile</header>
+
+    <nav>
+      <a href="/">Top</a>
+      <a href="/resume/">Resume</a>
+    </nav>
+
+    {% block content %}{% endblock %}
+    
+  </body>
+</html>
