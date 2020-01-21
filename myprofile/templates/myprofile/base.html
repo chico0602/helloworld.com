@@ -10,11 +10,11 @@
     <header>Chico's Profile</header>
 
     <nav>
-      <a href="/">Top</a>
-      <a href="/resume/">Resume</a>
+      <a href="{% url 'myprofile:top' %}">Top</a>
+      <a href="{% url 'myprofile:resume' %}">Resume</a>
     </nav>
 
     {% block content %}{% endblock %}
-    
+
   </body>
 </html>
