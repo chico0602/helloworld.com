@@ -11,7 +11,7 @@ class Review(models.Model):
         (5, '☆☆☆☆☆')
     )
 
-    store_name = models.CharField('店名', max_length=255, unique=True)
+    store_name = models.CharField('店名', max_length=255, primary_key=True)
     title = models.CharField('タイトル', max_length=255)
     text = models.TextField('口コミテキスト', blank=True)
     stars = models.IntegerField('星の数', choices=STARS)
