@@ -4,6 +4,6 @@ from . import views
 app_name = 'myprofile'
 
 urlpatterns = [
-    path('', views.top, name='top'),
-    path('resume/', views.resume, name='resume'),
+    path('', views.Top.as_view(), name='top'),
+    path('resume/', views.Resume.as_view(), name='resume'),
 ]

@@ -1,15 +1,14 @@
 from django.shortcuts import render
+from django.views import generic
 
 # Create your views here.
 from django.http import HttpResponse
 from django.template import loader
 
 
-def top(request):
-    context = {
-        'name': 'ちこ',
-    }
-    return render(request, 'myprofile/top.html', context)
+class Top(generic.TemplateView):
+    template_name = 'myprofile/top.html'
+    extra_context = {'name': 'ちこ'}
 
-def resume(request):
-    return render(request, 'myprofile/resume.html')
+class Resume(generic.TemplateView):
+    template_name = 'myprofile/resume.html'

@@ -1,10 +1,8 @@
 from django.shortcuts import render
-
+from django.views import generic
 # Create your views here.
 from .models import Diary
 
-def top(request):
-    context = {
-        'diary_list': Diary.objects.all(),
-    }
-    return render(request, 'diaries/diary_list.html', context)
+class Top(generic.ListView):
+    queryset = Diary.objects.all()
+    ordering = 'created_at'
