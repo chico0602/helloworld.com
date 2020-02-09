@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+}
+body{
+  width:600px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+/*エラーの場合に作成されるul要素は、errorlistというクラス名がついている*/
+.errorlist{
+  margin: 0;
+  padding:0;
+  list-style-type: none;
+  color: red;
+}
+div.field{
+  margin-bottom:20px;
+}
+div.firld > span.helptext{
+  font-size: 14px;
+  color: #999;
+}
+div.field > label{
+  display: block;
+}
+div.field > input,
+div.field > textarea,
+div.field > select{
+  width: 100%;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: solid 1px #999;
+}
