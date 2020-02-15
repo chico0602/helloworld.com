@@ -1,0 +1,14 @@
+{% extends 'videos/base.html' %}
+
+{% block content %}
+  {% for video in video_list %}
+    <a href=" ">
+      <div class="video">
+        {% if video.thumbnail %}
+          <img src="{{ video.tumbnail.url }}">
+        {% endif %}
+        <h2>{{ video.title}}</h2>
+      </div>
+    </a>
+  {% endfor %}
+{% endblock %}

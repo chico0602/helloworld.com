@@ -15,7 +15,7 @@ class ContactForm(forms.Form):
         label='メールアドレス', required=False, help_text='※任意',
     )
     text = forms.CharField(
-        label='お問い合わせ内容'
+        label='お問い合わせ内容',widget=forms.Textarea
     )
     category = forms.ChoiceField(
         label='カテゴリ', choices=CATEGORIES,
