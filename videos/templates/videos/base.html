@@ -8,6 +8,11 @@
     <title>動画アップロード</title>
   </head>
   <body>
+    <p>
+      <a href="{% url 'videos:video_list' %}">動画一覧</a>
+      <a href="{% url 'videos:video_create' %}">アップロード</a>
+    </p>
+    <br>
     {% block content %}{% endblock %}
   </body>
 </html>
